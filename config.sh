@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
 # add symlinks for config files that need to be in the home directory
 rm -rf ~/.bashrc && ln -s ~/.config/bash/.bashrc ~/.bashrc
