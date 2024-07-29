@@ -1,6 +1,7 @@
 /*
 !.gitignore
 
-!bash
-
-!config.sh
+!.bashrc
+!.bash_aliases
+!.config
+!.ssh
