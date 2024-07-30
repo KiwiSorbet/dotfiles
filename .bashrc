@@ -1,9 +1,3 @@
-# if not running interactively, don't do anything
-case $- in
-    *i*) ;;
-      *) return;;
-esac
-
 # history
 HISTSIZE=1000 # command history size
 HISTFILESIZE=2000 # history file size
@@ -11,7 +5,7 @@ HISTCONTROL=ignoreboth # no duplicate lines
 shopt -s histappend # append to the history file, don't overwrite it
 
 # aliases
-~/.bash_aliases
+. ~/.bash_aliases
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
