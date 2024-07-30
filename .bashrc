@@ -1,3 +1,9 @@
+# if not running interactively, don't do anything
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
 # history
 HISTSIZE=1000 # command history size
 HISTFILESIZE=2000 # history file size
