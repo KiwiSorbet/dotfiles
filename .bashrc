@@ -11,7 +11,7 @@ HISTCONTROL=ignoreboth # no duplicate lines
 shopt -s histappend # append to the history file, don't overwrite it
 
 # aliases
-. ~/.config/bash/.bash_aliases
+. ~/.bash_aliases
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
