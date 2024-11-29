@@ -99,6 +99,7 @@ if ! shopt -oq posix; then
 fi
 
 # Aliases
+alias update="sudo apt update && sudo apt upgrade -y"
 alias pull="git fetch && git pull"
 alias printu="cat /etc/passwd | cut -d: -f1"
 alias printusr="cat /etc/passwd | grep -v "/sbin/nologin" | cut -d: -f1"
