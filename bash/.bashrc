@@ -105,4 +105,5 @@ alias printu="cat /etc/passwd | cut -d: -f1"
 alias printusr="cat /etc/passwd | grep -v "/sbin/nologin" | cut -d: -f1"
 alias ll="ls -lh  --group-directories-first"
 alias lll="ls -lAXh --group-directories-first"
+alias pip="uv pip"
 
