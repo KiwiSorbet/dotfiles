@@ -4,5 +4,5 @@
 cp -r * ~/.config/
 
 # Symlinks
-ln -sf ~/.config/bash/.bashrc ~/.bashrc
-ln -sf ~/.config/git/.gitconfig ~/.gitconfig
+ln -sf ~/.config/bash/.bashrc ${HOME}/.bashrc
+ln -sf ~/.config/git/.gitconfig ${HOME}/.gitconfig
