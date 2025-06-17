@@ -4,7 +4,7 @@
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
 # Move all files from repo to ~/.config
-cp -ra ${SCRIPT_DIR}/* ${HOME}/.config/
+cp -r ${SCRIPT_DIR}/* ${SCRIPT_DIR}/.* ${HOME}/.config/
 
 # Symlinks
 ln -sf ~/.config/bash/.bashrc ${HOME}/.bashrc
