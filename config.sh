@@ -5,7 +5,7 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 REPO_DIR="$(dirname "$SCRIPT_DIR")"
 
 # Move all files from repo to ~/.config
-cp -r "$REPO_DIR"/* ~/.config/
+cp -r "${REPO_DIR}/* ${HOME}/.config/
 
 # Symlinks
 ln -sf ~/.config/bash/.bashrc ${HOME}/.bashrc
