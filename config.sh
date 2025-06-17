@@ -1,11 +1,10 @@
 #!/usr/bin/env bash
 
 # Get the directory where the script is located
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-REPO_DIR="$(dirname "$SCRIPT_DIR")"
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
 # Move all files from repo to ~/.config
-cp -r ${REPO_DIR}/* ${HOME}/.config/
+cp -r ${SCRIPT_DIR}/* ${HOME}/.config/
 
 # Symlinks
 ln -sf ~/.config/bash/.bashrc ${HOME}/.bashrc
