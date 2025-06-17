@@ -3,5 +3,6 @@
 # Move all files from repo to ~/.config
 cp -r * ~/.config/
 
-# Create symlink from ~/.config/bash/.bashrc to ~/.bashrc
+# Symlinks
 ln -sf ~/.config/bash/.bashrc ~/.bashrc
+ln -sf ~/.config/git/.gitconfig ~/.gitconfig
